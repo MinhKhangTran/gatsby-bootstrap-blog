@@ -23,7 +23,7 @@ export interface IBlogpost {
 
 // markup
 const IndexPage = ({ location, data }) => {
-  console.log(data);
+  
 
   return (
     <Layout>
@@ -33,7 +33,7 @@ const IndexPage = ({ location, data }) => {
         title="The Blog"
         subtitle="Write Ideas"
       />
-      <BlogPosts posts={data} />
+      <BlogPosts home posts={data} />
     </Layout>
   );
 };

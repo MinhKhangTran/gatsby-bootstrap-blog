@@ -3,7 +3,7 @@ import { IBlogpost } from "../pages";
 import { Button } from "react-bootstrap";
 import { Link } from "gatsby";
 
-const BlogPosts = ({ posts }: { posts: IBlogpost }) => {
+const BlogPosts = ({ posts,home }: { posts: IBlogpost;home?:boolean }) => {
   console.log(posts);
 
   return (
@@ -21,11 +21,16 @@ const BlogPosts = ({ posts }: { posts: IBlogpost }) => {
           </article>
         );
       })}
-      <div className="blogposts_button_wrapper d-flex justify-content-end">
+      {home &&     <div className="blogposts_button_wrapper d-flex justify-content-end">
+        <Link to="/posts">
+
+        
         <Button type="button" className="mb-5">
           All Posts
         </Button>
-      </div>
+        </Link>
+      </div>}
+   
     </div>
   );
 };
