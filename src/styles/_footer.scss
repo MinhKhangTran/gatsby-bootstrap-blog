@@ -1,8 +1,8 @@
 footer {
-  padding: 4rem 0;
+  padding: 2rem 0 0.5rem 0;
   border-top: solid 1px $teal-400;
   .socials {
-    gap: 2rem;
+    gap: 1.5rem;
     margin-bottom: 1.5rem;
     a {
       width: 50px;
@@ -12,6 +12,26 @@ footer {
       border-radius: 50%;
       display: grid;
       place-items: center;
+    }
+  }
+}
+
+@media screen and (min-width: 992px) {
+  footer {
+    padding: 3.5rem 0 1rem 0;
+    border-top: solid 1px $teal-400;
+    .socials {
+      gap: 2rem;
+      margin-bottom: 1.5rem;
+      a {
+        width: 50px;
+        height: 50px;
+        background-color: $teal-400;
+        color: white;
+        border-radius: 50%;
+        display: grid;
+        place-items: center;
+      }
     }
   }
 }
