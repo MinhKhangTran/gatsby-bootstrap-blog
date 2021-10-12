@@ -5,7 +5,7 @@ require("dotenv").config({
 module.exports = {
   siteMetadata: {
     siteUrl: "https://www.yourdomain.tld",
-    title: "gatsby_bootstrap_custom_portfolio",
+    title: "BlogIt!",
     description: "A static site made with gatsby and bootstrap ✨",
     keywords: "bootstrap, gatsby",
     author: "mkt",

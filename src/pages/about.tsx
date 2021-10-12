@@ -4,13 +4,13 @@ import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 
 // markup
-const IndexPage = () => {
+const AboutPage = () => {
   return (
     <Layout>
-      <SEO title="Homepage" />
+      <SEO title="About" />
       <Hero />
     </Layout>
   );
 };
 
-export default IndexPage;
+export default AboutPage;
