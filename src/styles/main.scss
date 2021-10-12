@@ -45,6 +45,10 @@ $teal-colors: (
 // import bootstrap whole sass lib (incorporates all above redefined vars & values)
 @import "~bootstrap/scss/bootstrap";
 
+main {
+  margin-top: 80px;
+}
+
 //import custom components
 @import "./footer";
 @import "./hero";
