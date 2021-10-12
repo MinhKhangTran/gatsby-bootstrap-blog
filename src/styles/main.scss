@@ -1,0 +1,46 @@
+// load custom font from google fonts
+
+@import "~bootstrap/scss/functions";
+// redefine variables not dependent on anything else
+
+// global variables
+$primary: #20c997;
+
+// theme color variables
+
+// font family
+
+// links
+
+// import variables and mixins files (so you can use them below)
+// any redefined vars above will be incorporated into the files (e.g. in maps)
+@import "~bootstrap/scss/variables";
+@import "~bootstrap/scss/mixins";
+
+//Get teal color
+$teal-colors: (
+  "teal-100": $teal-100,
+  "teal-200": $teal-200,
+  "teal-300": $teal-300,
+  "teal-400": $teal-400,
+  "teal-500": $teal-500,
+  "teal-600": $teal-600,
+  "teal-700": $teal-700,
+  "teal-800": $teal-800,
+  "teal-900": $teal-900,
+);
+//create teal shapes
+@each $color, $value in $teal-colors {
+  .bg-#{$color} {
+    background-color: $value;
+  }
+  .text-#{$color} {
+    color: $value;
+  }
+}
+
+// utility api - import utility file first
+// import bootstrap whole sass lib (incorporates all above redefined vars & values)
+@import "~bootstrap/scss/bootstrap";
+
+//import custom components
