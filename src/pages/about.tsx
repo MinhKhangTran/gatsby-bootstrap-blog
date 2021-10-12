@@ -4,11 +4,15 @@ import Layout from "../components/Layout";
 import SEO from "../components/Seo";
 
 // markup
-const AboutPage = () => {
+const AboutPage = ({ location }) => {
   return (
     <Layout>
       <SEO title="About" />
-      <Hero />
+      <Hero
+        location={location.pathname}
+        title="About"
+        subtitle="This is what I do"
+      />
     </Layout>
   );
 };
