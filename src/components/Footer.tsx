@@ -5,18 +5,21 @@ const Footer = () => {
   return (
     <footer>
       <div className="socials d-flex justify-content-center">
-        <a href="#">
+        <a href="https://twitter.com/">
           <FaTwitter size="2em" />
+          <span className="visually-hidden">Twitter</span>
         </a>
-        <a href="#">
+        <a href="https://github.com/">
           <FaGithub size="2em" />
+          <span className="visually-hidden">Github</span>
         </a>
-        <a href="#">
+        <a href="https://www.instagram.com/">
           <FaInstagram size="2em" />
+          <span className="visually-hidden">Instagram</span>
         </a>
       </div>
       <div className="footer text-center">
-        <p className="text-teal-400">
+        <p className="footer_text">
           Copyright &copy; BlogIt! {new Date().getFullYear()}
         </p>
       </div>
