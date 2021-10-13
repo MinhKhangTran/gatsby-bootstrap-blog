@@ -24,7 +24,7 @@ const SinglePost = ({ data, location }: { data: IPost; location: any }) => {
 
       <section className="post mt-5">
         <Button
-          className="text-white mb-3"
+          className=" mb-3"
           onClick={() => {
             navigate(-1);
           }}

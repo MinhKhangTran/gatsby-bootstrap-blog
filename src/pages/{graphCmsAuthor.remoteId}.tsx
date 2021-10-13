@@ -27,7 +27,7 @@ const SingleAuthor = ({ data }: { data: IAuthor }) => {
       <SEO title={data.graphCmsAuthor.name} />
       <section className="post mt-5">
         <Button
-          className="text-white mb-3"
+          className=" mb-3"
           onClick={() => {
             navigate(-1);
           }}

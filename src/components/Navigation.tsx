@@ -29,16 +29,16 @@ const Navigation = () => {
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="ms-auto">
-            <Link className="nav-link" to="/">
+            <Link className="nav-link" activeStyle={{ color: "#128260",fontWeight:"bold" }} to="/">
               Home
             </Link>
-            <Link className="nav-link" to="/about">
+            <Link className="nav-link" activeStyle={{ color: "#128260",fontWeight:"bold" }} to="/about">
               About
             </Link>
-            <Link className="nav-link" to="/contact">
+            <Link className="nav-link" activeStyle={{ color: "#128260",fontWeight:"bold" }} to="/contact">
               Contact
             </Link>
-            <Link className="nav-link" to="/posts">
+            <Link className="nav-link" activeStyle={{ color: "#128260",fontWeight:"bold" }} to="/posts">
               Posts
             </Link>
           </Nav>

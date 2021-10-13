@@ -25,7 +25,7 @@ const BlogPosts = ({ posts, home }: { posts: IBlogpost; home?: boolean }) => {
       })}
       {home && (
         <div className="blogposts_button_wrapper d-flex justify-content-end mb-5">
-          <Link to="/posts" className="btn btn-primary text-white">
+          <Link to="/posts" className="btn btn-primary">
             All Posts
           </Link>
         </div>

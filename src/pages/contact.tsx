@@ -80,7 +80,7 @@ const ContactPage = ({ location }) => {
               </FloatingLabel>
             </Col>
             <Col className="mx-auto">
-              <Button type="submit" className="my-5 text-white">
+              <Button type="submit" className="my-5">
                 Submit
               </Button>
             </Col>
