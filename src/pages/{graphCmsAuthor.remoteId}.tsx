@@ -50,7 +50,7 @@ const SingleAuthor = ({ data }: { data: IAuthor }) => {
           return (
             <article key={posts.id} className="posts my-5">
               <Link to={`/${posts.slug}`}>
-                <h3 className="text-teal-400">{posts.title}</h3>
+                <h3 className="text-teal-600">{posts.title}</h3>
               </Link>
               <p className="lead">{posts.excerpt}</p>
               <p className="fst-italic">{posts.date}</p>
