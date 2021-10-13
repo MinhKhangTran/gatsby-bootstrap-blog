@@ -1,4 +1,4 @@
-import { StaticImage } from "gatsby-plugin-image";
+import { GatsbyImage, getImage, StaticImage } from "gatsby-plugin-image";
 import React from "react";
 
 const Hero = ({

@@ -6,7 +6,7 @@ import { graphql } from "gatsby";
 import BlogPosts from "../components/BlogPosts";
 
 // markup
-const PostsPage = ({ location,data }) => {
+const PostsPage = ({ location, data }) => {
   return (
     <Layout>
       <SEO title="Posts" />
@@ -27,6 +27,7 @@ export const query = graphql`
         id
         author {
           name
+          remoteId
         }
         date
         excerpt
@@ -37,6 +38,5 @@ export const query = graphql`
     }
   }
 `;
-
 
 export default PostsPage;

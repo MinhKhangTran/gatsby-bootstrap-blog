@@ -16,7 +16,9 @@ const BlogPosts = ({ posts, home }: { posts: IBlogpost; home?: boolean }) => {
             </Link>
             <p className="lead">{posts.excerpt}</p>
             <p className="fst-italic">
-              Wrote by {posts.author.name} on {posts.date}
+              Wrote by{" "}
+              <Link to={`/${posts.author.remoteId}`}>{posts.author.name}</Link>{" "}
+              on {posts.date}
             </p>
           </article>
         );

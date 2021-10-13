@@ -9,7 +9,7 @@ export interface IBlogpost {
   allGraphCmsPost: {
     nodes: [
       {
-        author: { name: string };
+        author: { name: string; remoteId: string };
         date: string;
         excerpt: string;
         id: string;
@@ -23,8 +23,6 @@ export interface IBlogpost {
 
 // markup
 const IndexPage = ({ location, data }) => {
-  
-
   return (
     <Layout>
       <SEO title="Homepage" />
@@ -45,6 +43,7 @@ export const query = graphql`
         id
         author {
           name
+          remoteId
         }
         date
         excerpt
